@@ -1,0 +1,21 @@
+Package: flowFDA
+Type: Package
+Title: flowFDA: Flow Cytometry Functional Data Analysis
+Version: 0.99
+Author: Lieven Clement and Olivier Thas
+Date: 2014-01-21
+Maintainer: Lieven Clement <lieven.clement@gmail.com>
+Depends: R (>= 2.10), flowCore, flowViz, flowFP, multcomp, mclust
+Suggests: flowFDAExampleData
+Imports: Biobase, BiocGenerics (>= 0.1.6), flowCore, flowViz, flowFP,
+        graphics, grDevices, methods, stats, stats4, MASS, multcomp,
+        mclust
+Description: This package provides functions for analysing flow cytometry
+    experiments with model based clustering, functional principal component
+    analysis, functional discriminant analysis and to compare multivariate flow
+    cytometry fingerprints accross treatments
+License: GPL (>=2)
+Collate: 'flowFdaClasses.R' 'constructors.R' 'allGenerics.R'
+        'accessors.R' 'methods.R' 'plot-methods.R' 'flowFdaTest.R'
+biocViews: FlowCytometry, CellBasedAssays, Bioinformatics
+Packaged: 2014-02-21 10:25:21 UTC; u0071934
