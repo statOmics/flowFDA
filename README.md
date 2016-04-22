@@ -9,21 +9,21 @@ cytometry fingerprints accross treatments (De Roy, K., Clement, L., Thas, O., Wa
 
 #### Installation
 
-Install flowFDAExampleData from its
-[GitHub repository](https://github.com/lievenclement/flowFDAExampleData). You first need to
+Install flowFDA from its
+[GitHub repository](https://github.com/lievenclement/flowFDA). You first need to
 install the [devtools](https://cran.r-project.org/package=devtools).
 
 ```r
 install.packages("devtools")
 ```
 
-Then install flowFDAExampleData using the `install_github` function in the
+Then install flowFDAE using the `install_github` function in the
 [devtools](https://cran.r-project.org/package=devtools) package. (With
 `build_vignettes=TRUE`, the vignettes will be built and installed.)
 
 ```r
 library(devtools)
-install_github("lievenclement/flowFDAExampleData", build_vignettes=TRUE)
+install_github("lievenclement/flowFDA", build_vignettes=TRUE)
 ```
 
 ### Copyright
