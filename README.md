@@ -30,6 +30,15 @@ install_github("lievenclement/flowFDAExampleData")
 install_github("lievenclement/flowFDA", build_vignettes=TRUE)
 ```
 
+###Vignettes
+Examples can be found in the vignettes
+
+Regular analysis: 
+vignette("flowFDA")
+
+Analysis based on probability binning for backward compatibility with De Roy et al. (2012), Water Research, 46(3), 907-919:
+vignette("flowFDAProbabilityBinning")
+
 ### Copyright
 Copyright (C) 2016 Lieven Clement, Olivier Thas, Nico Boon.
 
@@ -37,3 +46,5 @@ Copyright (C) 2016 Lieven Clement, Olivier Thas, Nico Boon.
 The flowFDA package as a whole is distributed under
 [GPL-3 (GNU General Public License version 3)](http://www.gnu.org/licenses/gpl-3.0.en.html).
 
+### Contact
+lieven.clement@ugent.be

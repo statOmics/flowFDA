@@ -9,6 +9,11 @@
 .greenWhiteOrange<-colorRampPalette(c("green","white","orange"))
 
 #########print methods
+print.Mclust<-function(x, digits = getOption("digits"), ...)
+{
+if (as.character(x$call)[1]=="<undef>") cat("cluster object has not been initalized yet\n") else mclust::print.Mclust(x, digits = digits,...)
+}
+
 print.flowBasis<-function(x,...)
 {
 cat("flowBasis object\n")

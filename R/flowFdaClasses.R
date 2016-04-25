@@ -4,22 +4,26 @@
 hlp<-rnorm(100)
 dim(hlp)<-c(10,10)
 
-setOldClass("prcomp",prototype=prcomp(hlp))
-setOldClass("Mclust",prototype=Mclust(hlp))
-rm(hlp)
+prcompProt=prcomp(hlp)
+for (i in (1:length(prcompProt)))
+prcompProt[[i]]=new(Class=class(prcompProt[[i]]))
 
-#prcompProt=prcomp(hlp)
-#for (i in (1:length(prcompProt)))
-#prcompProt[[i]]=new(Class=class(prcompProt[[i]]))
+mclustProt=Mclust(hlp)
+for (i in (1:length(mclustProt)))
+{
+className=class(mclustProt[[i]])
+mclustProt[[i]]=try(new(Class=class(mclustProt[[i]])),silent=TRUE)
+if (class(mclustProt[[i]])=="try-error") 
+{	
+#mclustProt[[i]]=NULL	
+mclustProt[[i]]= "not initialized"
+class(mclustProt[[i]])=className
+}
+}
 
-#mclustProt=Mclust(hlp)
-#for (i in (1:length(mclustProt)))
-#mclustProt[[i]]=new(Class=class(mclustProt[[i]]))
-
-
-#setOldClass("prcomp",prototype=prcompProt)
-#setOldClass("Mclust",prototype=mclustProt)
-#rm(hlp,prcompProt,mclustProt)
+setOldClass("prcomp",prototype=prcompProt)
+setOldClass("Mclust",prototype=mclustProt)
+rm(hlp,prcompProt,mclustProt)
 
 
 # S4 documentation using Roxygen.
