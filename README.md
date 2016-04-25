@@ -11,10 +11,12 @@ cytometry fingerprints accross treatments (De Roy, K., Clement, L., Thas, O., Wa
 
 Install flowFDA from its
 [GitHub repository](https://github.com/lievenclement/flowFDA). You first need to
-install the [devtools](https://cran.r-project.org/package=devtools).
+install the R/Bioconductor packages [Biobase](http://bioconductor.org/packages/release/bioc/html/Biobase.html), [BiocGenerics](http://bioconductor.org/packages/release/bioc/html/BiocGenerics.html) (>= 0.1.6), [flowCore] (http://bioconductor.org/packages/release/bioc/html/flowCore.html), [flowViz](http://bioconductor.org/packages/release/bioc/html/BiocGenerics.html), [flowFP](http://bioconductor.org/packages/release/bioc/html/flowFP.html),
+[graphics](https://cran.r-project.org/package=graphics), [grDevices](https://cran.r-project.org/package=grDevices), [methods](https://cran.r-project.org/package=methods), [stats](https://cran.r-project.org/package=stats), [stats4](https://cran.r-project.org/package=stats4), [MASS](https://cran.r-project.org/package=MASS), [multcomp](https://cran.r-project.org/package=multcomp),[mclust](https://cran.r-project.org/package=mclust) and [devtools](https://cran.r-project.org/package=devtools).
 
 ```r
-install.packages("devtools")
+source("https://bioconductor.org/biocLite.R")
+biocLite(c("flowCore", "flowViz", "flowFP", "MASS", "multcomp","mclust","devtools")
 ```
 
 Then install flowFDAE using the `install_github` function in the
