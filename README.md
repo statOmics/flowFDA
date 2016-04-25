@@ -1,5 +1,5 @@
 ### flowFDA: Flow Cytometry Functional Data Analysis 
-Authors: Lieven Clement, Olivier Thas, Nico Boon
+Authors: Lieven Clement and Olivier Thas
 
 flowFDA is an [R](http://www.r-project.org) package for analysing flow cytometry
 experiments with model based clustering, functional principal component
@@ -40,7 +40,7 @@ Analysis based on probability binning for backward compatibility with De Roy et 
 vignette("flowFDAProbabilityBinning")
 
 ### Copyright
-Copyright (C) 2016 Lieven Clement, Olivier Thas, Nico Boon.
+Copyright (C) 2016 Lieven Clement and Olivier Thas.
 
 ### Licenses
 The flowFDA package as a whole is distributed under
