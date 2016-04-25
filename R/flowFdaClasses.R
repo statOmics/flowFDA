@@ -3,18 +3,23 @@
 #prcomp constructor
 hlp<-rnorm(100)
 dim(hlp)<-c(10,10)
-prcompProt=prcomp(hlp)
-for (i in (1:length(prcompProt)))
-prcompProt[[i]]=new(Class=class(prcompProt[[i]]))
 
-mclustProt=Mclust(hlp)
-for (i in (1:length(mclustProt)))
-mclustProt[[i]]=new(Class=class(mclustProt[[i]]))
+setOldClass("prcomp",prototype=prcomp(hlp))
+setOldClass("Mclust",prototype=Mclust(hlp))
+rm(hlp)
+
+#prcompProt=prcomp(hlp)
+#for (i in (1:length(prcompProt)))
+#prcompProt[[i]]=new(Class=class(prcompProt[[i]]))
+
+#mclustProt=Mclust(hlp)
+#for (i in (1:length(mclustProt)))
+#mclustProt[[i]]=new(Class=class(mclustProt[[i]]))
 
 
-setOldClass("prcomp",prototype=prcompProt)
-setOldClass("Mclust",prototype=mclustProt)
-rm(hlp,prcompProt,mclustProt)
+#setOldClass("prcomp",prototype=prcompProt)
+#setOldClass("Mclust",prototype=mclustProt)
+#rm(hlp,prcompProt,mclustProt)
 
 
 # S4 documentation using Roxygen.

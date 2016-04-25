@@ -98,8 +98,8 @@ The package builds upon the Bioconductor package  \texttt{flowCore} to import ra
 We first have to load the \texttt{flowFDA} package and read the flowset. For importing the data we refer to the main vignette of \texttt{flowFDA}. Again, we start from the example data that is available in the \texttt{flowFDAExampleData} package. 
 
 <<CompanionPkg, eval=FALSE>>=
-source("http://www.bioconductor.org/biocLite.R")
-biocLite("flowFDAExampleData")
+install.packages("devtools")
+install_github("lievenclement/flowFDAExampleData")
 @
 
 It can be loaded by

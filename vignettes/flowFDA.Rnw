@@ -134,11 +134,11 @@ A good choice of the filename can enable an automated construction of the groupi
 
 The steps above have been performed on the example data. 
 The data has not been integrated in the \texttt{flowFDA} package to comply with the Bioconductor guidelines with regard to the size of software packages. 
-The example dataset can be found in the \texttt{flowFDAExampleData} Bioconductor data package and  can be downloaded in the usual way.
+The example dataset can be found in the \texttt{flowFDAExampleData}data package and that can be downloaded from github.
 
 <<CompanionPkg, eval=FALSE>>=
-source("http://www.bioconductor.org/biocLite.R")
-biocLite("flowFDAExampleData")
+install.packages("devtools")
+install_github("lievenclement/flowFDAExampleData")
 @
 
 First of we load the package and the experiment data package:

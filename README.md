@@ -19,10 +19,12 @@ install.packages("devtools")
 
 Then install flowFDAE using the `install_github` function in the
 [devtools](https://cran.r-project.org/package=devtools) package. (With
-`build_vignettes=TRUE`, the vignettes will be built and installed.)
+`build_vignettes=TRUE`, the vignettes will be built and installed.) 
+You first need to install the flowFDADataExample package for this purpose
 
 ```r
 library(devtools)
+install_github("lievenclement/flowFDAExampleData")
 install_github("lievenclement/flowFDA", build_vignettes=TRUE)
 ```
 
