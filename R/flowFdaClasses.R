@@ -49,7 +49,7 @@ rm(hlp,prcompProt,mclustProt)
 #' @exportClass flowBasis
 #' 
 
-setClass("flowBasis",representation(basis="matrix",param="matrix",pcom="matrix",nbin="integer",bw="numeric",probBin="logical",fset="flowSet",fmod="flowFPModel",fp="flowFP"),prototype = list(basis=matrix(nrow=0,ncol=0),para=matrix(ncol=2,nrow=0),pcom=matrix(ncol=2,nrow=0),nbin=integer(),bw=numeric(),probBin=logical(),fset=new(Class="flowSet"),fmod=new(Class="flowFPModel"),fp=new(Class="flowFP")))
+setClass("flowBasis",representation(basis="matrix",param="matrix",pcom="matrix",nbin="integer",bw="numeric",probBin="logical",fset="flowSet",fmod="flowFPModel",fp="flowFP"),prototype = list(basis=matrix(nrow=0,ncol=0),param=matrix(ncol=2,nrow=0),pcom=matrix(ncol=2,nrow=0),nbin=integer(),bw=numeric(),probBin=logical(),fset=new(Class="flowSet"),fmod=new(Class="flowFPModel"),fp=new(Class="flowFP")))
 
 #' The flowPca class
 #' 

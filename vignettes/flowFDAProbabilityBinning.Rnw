@@ -1,6 +1,6 @@
 \documentclass[10pt]{article}
-%\VignetteIndexEntry{Using flowFDA}
-%\VignetteIndexEntry{flowFDA}
+%\VignetteIndexEntry{Using flowFDA with probability binning}
+%\VignetteIndexEntry{flowFDAprobabilitybinning}
  
 
  \usepackage{graphicx}
